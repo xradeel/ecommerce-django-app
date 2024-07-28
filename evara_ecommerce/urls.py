@@ -22,8 +22,8 @@ urlpatterns = [
     
     path('', include('evara_home.urls')),
     path('about/', include('about.urls')),
-    # path('shop/', include('shop.urls')),
-    # path('contact/', include('contact.urls')),
-    # path('blog/', include('blogs.urls')),
-    # path('user/', include('user.urls')),
+    path('shop/', include('shop.urls')),
+    path('contact/', include('contact.urls')),
+    path('blog/', include('blogs.urls')),
+    path('user/', include('user.urls')),
 ]
