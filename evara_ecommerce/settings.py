@@ -41,6 +41,11 @@ INSTALLED_APPS = [
 
     #my_apps
     'evara_home',
+    'about',
+    'contact',
+    'shop',
+    'user',
+    'blogs',
 ]
 
 MIDDLEWARE = [
