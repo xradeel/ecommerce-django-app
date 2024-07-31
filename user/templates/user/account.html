@@ -3,7 +3,7 @@
   <div class="page-header breadcrumb-wrap">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" rel="nofollow">Home</a>
+        <a href="{% url 'home:home' %}" rel="nofollow">Home</a>
         <span></span> Pages <span></span> Account
       </div>
     </div>
@@ -78,7 +78,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="page-login-register.html"
+                    <a class="nav-link" href="{% url 'user:user.login' %}"
                       ><i class="fi-rs-sign-out mr-10"></i>Logout</a
                     >
                   </li>
@@ -271,7 +271,9 @@
                     <div class="card-body">
                       <p>
                         Already have an account?
-                        <a href="page-login-register.html">Log in instead!</a>
+                        <a href="{% url 'user:user.login' %}"
+                          >Log in instead!</a
+                        >
                       </p>
                       <form method="post" name="enq">
                         <div class="row">

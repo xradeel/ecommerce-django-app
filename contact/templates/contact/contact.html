@@ -36,65 +36,6 @@
       </div>
     </div>
   </section>
-  <section class="section-border pt-50 pb-50">
-    <div class="container">
-      <div id="map-panes" class="leaflet-map mb-50"></div>
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h4 class="mb-15 text-brand">Office</h4>
-          205 North Michigan Avenue, Suite 810<br />
-          Chicago, 60601, USA<br />
-          <abbr title="Phone">Phone:</abbr> (123) 456-7890<br />
-          <abbr title="Email">Email: </abbr
-          ><a
-            href="https://wp.alithemes.com/cdn-cgi/l/email-protection"
-            class="__cf_email__"
-            data-cfemail="c4a7abaab0a5a7b08481b2a5b6a5eaa7aba9"
-            >[email&#160;protected]</a
-          ><br />
-          <a
-            class="btn btn-outline btn-sm btn-brand-outline font-weight-bold text-brand bg-white text-hover-white mt-20 border-radius-5 btn-shadow-brand hover-up"
-            ><i class="fi-rs-marker mr-10"></i>View map</a
-          >
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <h4 class="mb-15 text-brand">Studio</h4>
-          205 North Michigan Avenue, Suite 810<br />
-          Chicago, 60601, USA<br />
-          <abbr title="Phone">Phone:</abbr> (123) 456-7890<br />
-          <abbr title="Email">Email: </abbr
-          ><a
-            href="https://wp.alithemes.com/cdn-cgi/l/email-protection"
-            class="__cf_email__"
-            data-cfemail="0f6c60617b6e6c7b4f4a796e7d6e216c6062"
-            >[email&#160;protected]</a
-          ><br />
-          <a
-            class="btn btn-outline btn-sm btn-brand-outline font-weight-bold text-brand bg-white text-hover-white mt-20 border-radius-5 btn-shadow-brand hover-up"
-            ><i class="fi-rs-marker mr-10"></i>View map</a
-          >
-        </div>
-        <div class="col-md-4">
-          <h4 class="mb-15 text-brand">Shop</h4>
-          205 North Michigan Avenue, Suite 810<br />
-          Chicago, 60601, USA<br />
-          <abbr title="Phone">Phone:</abbr> (123) 456-7890<br />
-          <abbr title="Email">Email: </abbr
-          ><a
-            href="https://wp.alithemes.com/cdn-cgi/l/email-protection"
-            class="__cf_email__"
-            data-cfemail="5d3e3233293c3e291d182b3c2f3c733e3230"
-            >[email&#160;protected]</a
-          ><br />
-          <a
-            class="btn btn-outline btn-sm btn-brand-outline font-weight-bold text-brand bg-white text-hover-white mt-20 border-radius-5 btn-shadow-brand hover-up"
-          >
-            <i class="fi-rs-marker mr-10"></i> View map</a
-          >
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="pt-50 pb-50">
     <div class="container">
       <div class="row">
@@ -107,9 +48,9 @@
             <form
               class="contact-form-style text-center"
               id="contact-form"
-              action="#"
               method="post"
             >
+              {% csrf_token %}
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div class="input-style mb-20">

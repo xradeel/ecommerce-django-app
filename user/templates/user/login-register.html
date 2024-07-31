@@ -3,7 +3,7 @@
   <div class="page-header breadcrumb-wrap">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" rel="nofollow">Home</a>
+        <a href="{% url 'home:home' %}" rel="nofollow">Home</a>
         <span></span> Pages <span></span> Login / Register
       </div>
     </div>
@@ -132,7 +132,7 @@
                           >
                         </div>
                       </div>
-                      <a href="page-privacy-policy.html"
+                      <a href="{% url 'about:privacy.policy' %}"
                         ><i class="fi-rs-book-alt mr-5 text-muted"></i>Lean
                         more</a
                       >

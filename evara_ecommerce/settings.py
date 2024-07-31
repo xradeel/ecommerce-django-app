@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'shop',
     'user',
     'blogs',
+
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# INTERNAL_IPS = ('127.0.0.1', '192.168.0.1',)
 
 ROOT_URLCONF = 'evara_ecommerce.urls'
 

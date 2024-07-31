@@ -3,7 +3,7 @@
   <div class="page-header breadcrumb-wrap">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" rel="nofollow">Home</a>
+        <a href="{% url 'home:home' %}" rel="nofollow">Home</a>
         <span></span> Pages <span></span> Purchase Guide
       </div>
     </div>
@@ -102,22 +102,22 @@
               <div class="post-block-list post-module-1 post-module-5">
                 <ul>
                   <li class="cat-item cat-item-2">
-                    <a href="blog-category-list.html">Beauty</a> (3)
+                    <a href="{% url 'blogs:blogs' %}">Beauty</a> (3)
                   </li>
                   <li class="cat-item cat-item-3">
-                    <a href="blog-category-list.html">Book</a> (6)
+                    <a href="{% url 'blogs:blogs' %}">Book</a> (6)
                   </li>
                   <li class="cat-item cat-item-4">
-                    <a href="blog-category-list.html">Design</a> (4)
+                    <a href="{% url 'blogs:blogs' %}">Design</a> (4)
                   </li>
                   <li class="cat-item cat-item-5">
-                    <a href="blog-category-list.html">Fashion</a> (3)
+                    <a href="{% url 'blogs:blogs' %}">Fashion</a> (3)
                   </li>
                   <li class="cat-item cat-item-6">
-                    <a href="blog-category-list.html">Lifestyle</a> (6)
+                    <a href="{% url 'blogs:blogs' %}">Lifestyle</a> (6)
                   </li>
                   <li class="cat-item cat-item-7">
-                    <a href="blog-category-list.html">Travel</a> (2)
+                    <a href="{% url 'blogs:blogs' %}">Travel</a> (2)
                   </li>
                 </ul>
               </div>
@@ -132,7 +132,7 @@
                   <div
                     class="post-thumb d-flex border-radius-5 img-hover-scale mb-15"
                   >
-                    <a href="blog-post-fullwidth.html">
+                    <a href="{% url 'blogs:blog.post' %}">
                       <img
                         src="{% static 'assets/imgs/blog/blog-1.jpg' %}"
                         alt=""
@@ -153,7 +153,7 @@
                   <div
                     class="post-thumb d-flex border-radius-5 img-hover-scale mb-15"
                   >
-                    <a href="blog-post-fullwidth.html">
+                    <a href="{% url 'blogs:blog.post' %}">
                       <img
                         src="{% static 'assets/imgs/blog/blog-3.jpg' %}"
                         alt=""
@@ -174,7 +174,7 @@
                   <div
                     class="post-thumb d-flex border-radius-5 img-hover-scale mb-15"
                   >
-                    <a href="blog-post-fullwidth.html">
+                    <a href="{% url 'blogs:blog.post' %}">
                       <img
                         src="{% static 'assets/imgs/blog/blog-4.jpg' %}"
                         alt=""
@@ -195,7 +195,7 @@
                   <div
                     class="post-thumb d-flex border-radius-5 img-hover-scale mb-15"
                   >
-                    <a href="blog-post-fullwidth.html">
+                    <a href="{% url 'blogs:blog.post' %}">
                       <img
                         src="{% static 'assets/imgs/blog/blog-5.jpg' %}"
                         alt=""
@@ -216,7 +216,7 @@
                   <div
                     class="post-thumb d-flex border-radius-5 img-hover-scale mb-15"
                   >
-                    <a href="blog-post-fullwidth.html">
+                    <a href="{% url 'blogs:blog.post' %}">
                       <img
                         src="{% static 'assets/imgs/blog/blog-6.jpg' %}"
                         alt=""
@@ -246,7 +246,7 @@
               <div class="banner-text">
                 <span>Women Zone</span>
                 <h4>Save 17% on <br />Office Dress</h4>
-                <a href="shop-grid-right.html"
+                <a href="{% url 'shop:shop.main' %}"
                   >Shop Now <i class="fi-rs-arrow-right"></i
                 ></a>
               </div>
@@ -257,25 +257,25 @@
                 <h5 class="widget-title">Popular tags</h5>
               </div>
               <div class="tagcloud">
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >beautiful</a
                 >
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >New York</a
                 >
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >droll</a
                 >
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >intimate</a
                 >
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >loving</a
                 >
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >travel</a
                 >
-                <a class="tag-cloud-link" href="blog-category-grid.html"
+                <a class="tag-cloud-link" href="{% url 'blogs:blogs' %}"
                   >fighting
                 </a>
               </div>

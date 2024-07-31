@@ -3,7 +3,7 @@
   <div class="page-header breadcrumb-wrap">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" rel="nofollow">Home</a>
+        <a href="{% url 'home:home' %}" rel="nofollow">Home</a>
         <span></span> Shop <span></span> Compare
       </div>
     </div>
@@ -40,21 +40,21 @@
                   <td class="text-muted font-md fw-600">Name</td>
                   <td class="product_name">
                     <h5>
-                      <a href="shop-product-full.html"
+                      <a href="{% url 'shop:shop.product' %}"
                         >J.Crew Mercantile Women's Short</a
                       >
                     </h5>
                   </td>
                   <td class="product_name">
                     <h5>
-                      <a href="shop-product-full.html"
+                      <a href="{% url 'shop:shop.product' %}"
                         >Amazon Essentials Women's Tanks</a
                       >
                     </h5>
                   </td>
                   <td class="product_name">
                     <h5>
-                      <a href="shop-product-full.html"
+                      <a href="{% url 'shop:shop.product' %}"
                         >Amazon Brand - Daily Ritual Wom</a
                       >
                     </h5>

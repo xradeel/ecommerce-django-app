@@ -3,7 +3,7 @@
   <div class="page-header breadcrumb-wrap">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" rel="nofollow">Home</a>
+        <a href="{% url 'home:home' %}" rel="nofollow">Home</a>
         <span></span> Shop
       </div>
     </div>
@@ -66,7 +66,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-2-1.jpg' %}"
@@ -91,13 +91,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -109,10 +109,10 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Music</a>
+                    <a href="{% url 'shop:shop.main' %}">Music</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html"
+                    <a href="{% url 'shop:shop.product' %}"
                       >Colorful Pattern Shirts</a
                     >
                   </h2>
@@ -129,7 +129,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -140,7 +140,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-3-1.jpg' %}"
@@ -165,13 +165,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -183,10 +183,10 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Music</a>
+                    <a href="{% url 'shop:shop.main' %}">Music</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html"
+                    <a href="{% url 'shop:shop.product' %}"
                       >Cartoon Astronaut T-Shirts</a
                     >
                   </h2>
@@ -203,7 +203,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -214,7 +214,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-7-1.jpg' %}"
@@ -239,13 +239,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -257,10 +257,12 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Watch</a>
+                    <a href="{% url 'shop:shop.main' %}">Watch</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html">Plain Striola Shirts</a>
+                    <a href="{% url 'shop:shop.product' %}"
+                      >Plain Striola Shirts</a
+                    >
                   </h2>
                   <div class="rating-result" title="90%">
                     <span>
@@ -275,7 +277,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -286,7 +288,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-1-2.jpg' %}"
@@ -311,13 +313,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -329,10 +331,10 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Music</a>
+                    <a href="{% url 'shop:shop.main' %}">Music</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html"
+                    <a href="{% url 'shop:shop.product' %}"
                       >Landscape Painting Shirt</a
                     >
                   </h2>
@@ -349,7 +351,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -360,7 +362,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-4-1.jpg' %}"
@@ -385,13 +387,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -403,10 +405,12 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Speaker</a>
+                    <a href="{% url 'shop:shop.main' %}">Speaker</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html">Letter Print T-Shirt</a>
+                    <a href="{% url 'shop:shop.product' %}"
+                      >Letter Print T-Shirt</a
+                    >
                   </h2>
                   <div class="rating-result" title="90%">
                     <span>
@@ -421,7 +425,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -432,7 +436,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-5-2.jpg' %}"
@@ -457,13 +461,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -475,10 +479,10 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Camera</a>
+                    <a href="{% url 'shop:shop.main' %}">Camera</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html"
+                    <a href="{% url 'shop:shop.product' %}"
                       >Element Pattern Print Shirts</a
                     >
                   </h2>
@@ -495,7 +499,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -506,7 +510,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-8-2.jpg' %}"
@@ -531,13 +535,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -549,10 +553,12 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Phone</a>
+                    <a href="{% url 'shop:shop.main' %}">Phone</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html">Vintage Henley Shirt</a>
+                    <a href="{% url 'shop:shop.product' %}"
+                      >Vintage Henley Shirt</a
+                    >
                   </h2>
                   <div class="rating-result" title="90%">
                     <span>
@@ -566,7 +572,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -577,7 +583,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-11-1.jpg' %}"
@@ -602,23 +608,25 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Accessories </a>
+                    <a href="{% url 'shop:shop.main' %}">Accessories </a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html">Cotton Leaf Printed</a>
+                    <a href="{% url 'shop:shop.product' %}"
+                      >Cotton Leaf Printed</a
+                    >
                   </h2>
                   <div class="rating-result" title="90%">
                     <span>
@@ -633,7 +641,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -644,7 +652,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-13-1.jpg' %}"
@@ -669,23 +677,25 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Accessories </a>
+                    <a href="{% url 'shop:shop.main' %}">Accessories </a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html">Cotton Leaf Printed</a>
+                    <a href="{% url 'shop:shop.product' %}"
+                      >Cotton Leaf Printed</a
+                    >
                   </h2>
                   <div class="rating-result" title="90%">
                     <span>
@@ -700,7 +710,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -711,7 +721,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-3-1.jpg' %}"
@@ -736,13 +746,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -754,10 +764,10 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Music</a>
+                    <a href="{% url 'shop:shop.main' %}">Music</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html"
+                    <a href="{% url 'shop:shop.product' %}"
                       >Colorful Pattern Shirts</a
                     >
                   </h2>
@@ -774,7 +784,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -785,7 +795,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-2-1.jpg' %}"
@@ -810,13 +820,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -828,10 +838,10 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Music</a>
+                    <a href="{% url 'shop:shop.main' %}">Music</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html"
+                    <a href="{% url 'shop:shop.product' %}"
                       >Cartoon Astronaut T-Shirts</a
                     >
                   </h2>
@@ -848,7 +858,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -859,7 +869,7 @@
               <div class="product-cart-wrap mb-30">
                 <div class="product-img-action-wrap">
                   <div class="product-img product-img-zoom">
-                    <a href="shop-product-right.html">
+                    <a href="{% url 'shop:shop.product' %}">
                       <img
                         class="default-img"
                         src="{% static 'imgs/shop/product-7-2.jpg' %}"
@@ -884,13 +894,13 @@
                     <a
                       aria-label="Add To Wishlist"
                       class="action-btn hover-up"
-                      href="shop-wishlist.html"
+                      href="{% url 'shop:shop.wishlist' %}"
                       ><i class="fi-rs-heart"></i
                     ></a>
                     <a
                       aria-label="Compare"
                       class="action-btn hover-up"
-                      href="shop-compare.html"
+                      href="{% url 'shop:shop.compare' %}"
                       ><i class="fi-rs-shuffle"></i
                     ></a>
                   </div>
@@ -902,10 +912,12 @@
                 </div>
                 <div class="product-content-wrap">
                   <div class="product-category">
-                    <a href="shop-grid-right.html">Watch</a>
+                    <a href="{% url 'shop:shop.main' %}">Watch</a>
                   </div>
                   <h2>
-                    <a href="shop-product-right.html">Plain Striola Shirts</a>
+                    <a href="{% url 'shop:shop.product' %}"
+                      >Plain Striola Shirts</a
+                    >
                   </h2>
                   <div class="rating-result" title="90%">
                     <span>
@@ -920,7 +932,7 @@
                     <a
                       aria-label="Add To Cart"
                       class="action-btn hover-up"
-                      href="shop-cart.html"
+                      href="{% url 'shop:shop.cart' %}"
                       ><i class="fi-rs-shopping-bag-add"></i
                     ></a>
                   </div>
@@ -956,13 +968,13 @@
               Category
             </h5>
             <ul class="categories">
-              <li><a href="shop-grid-right.html">Shoes & Bags</a></li>
-              <li><a href="shop-grid-right.html">Blouses & Shirts</a></li>
-              <li><a href="shop-grid-right.html">Dresses</a></li>
-              <li><a href="shop-grid-right.html">Swimwear</a></li>
-              <li><a href="shop-grid-right.html">Beauty</a></li>
-              <li><a href="shop-grid-right.html">Jewelry & Watch</a></li>
-              <li><a href="shop-grid-right.html">Accessories</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Shoes & Bags</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Blouses & Shirts</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Dresses</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Swimwear</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Beauty</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Jewelry & Watch</a></li>
+              <li><a href="{% url 'shop:shop.main' %}">Accessories</a></li>
             </ul>
           </div>
           <!-- Fillter By Price -->
@@ -1061,7 +1073,7 @@
                 </div>
               </div>
             </div>
-            <a href="shop-grid-right.html" class="btn btn-sm btn-default"
+            <a href="{% url 'shop:shop.main' %}" class="btn btn-sm btn-default"
               ><i class="fi-rs-filter mr-5"></i> Fillter</a
             >
           </div>
@@ -1078,7 +1090,9 @@
                 <img src="{% static 'imgs/shop/thumbnail-3.jpg' %}" alt="#" />
               </div>
               <div class="content pt-10">
-                <h5><a href="shop-product-detail.html">Chen Cardigan</a></h5>
+                <h5>
+                  <a href="{% url 'shop:shop.product' %}">Chen Cardigan</a>
+                </h5>
                 <p class="price mb-0 mt-5">$99.50</p>
                 <div class="product-rate">
                   <div class="product-rating" style="width: 90%"></div>
@@ -1090,7 +1104,9 @@
                 <img src="{% static 'imgs/shop/thumbnail-4.jpg' %}" alt="#" />
               </div>
               <div class="content pt-10">
-                <h6><a href="shop-product-detail.html">Chen Sweater</a></h6>
+                <h6>
+                  <a href="{% url 'shop:shop.product' %}">Chen Sweater</a>
+                </h6>
                 <p class="price mb-0 mt-5">$89.50</p>
                 <div class="product-rate">
                   <div class="product-rating" style="width: 80%"></div>
@@ -1102,7 +1118,9 @@
                 <img src="{% static 'imgs/shop/thumbnail-5.jpg' %}" alt="#" />
               </div>
               <div class="content pt-10">
-                <h6><a href="shop-product-detail.html">Colorful Jacket</a></h6>
+                <h6>
+                  <a href="{% url 'shop:shop.product' %}">Colorful Jacket</a>
+                </h6>
                 <p class="price mb-0 mt-5">$25</p>
                 <div class="product-rate">
                   <div class="product-rating" style="width: 60%"></div>
@@ -1115,7 +1133,7 @@
             <div class="banner-text">
               <span>Women Zone</span>
               <h4>Save 17% on <br />Office Dress</h4>
-              <a href="shop-grid-right.html"
+              <a href="{% url 'shop:shop.main' %}"
                 >Shop Now <i class="fi-rs-arrow-right"></i
               ></a>
             </div>

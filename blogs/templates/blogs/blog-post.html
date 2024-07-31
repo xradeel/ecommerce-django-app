@@ -3,7 +3,7 @@
   <div class="page-header breadcrumb-wrap">
     <div class="container">
       <div class="breadcrumb">
-        <a href="index.html" rel="nofollow">Home</a>
+        <a href="{% url 'home:home' %}" rel="nofollow">Home</a>
         <span></span> Blog <span></span> Technology
       </div>
     </div>
@@ -200,13 +200,13 @@
             >
               <div class="tags w-50 w-sm-100">
                 <a
-                  href="blog-category-big.html"
+                  href="{% url 'blogs:blogs' %}"
                   rel="tag"
                   class="hover-up btn btn-sm btn-rounded mr-10"
                   >deer</a
                 >
                 <a
-                  href="blog-category-big.html"
+                  href="{% url 'blogs:blogs' %}"
                   rel="tag"
                   class="hover-up btn btn-sm btn-rounded mr-10"
                   >nature</a
