@@ -49,41 +49,32 @@
               class="contact-form-style text-center"
               id="contact-form"
               method="post"
+              action="{% url 'contact:contact' %}"
             >
               {% csrf_token %}
               <div class="row">
                 <div class="col-lg-6 col-md-6">
-                  <div class="input-style mb-20">
-                    <input name="name" placeholder="First Name" type="text" />
-                  </div>
+                  <div class="input-style mb-20">{{ContactFrom.name}}</div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                  <div class="input-style mb-20">
-                    <input name="email" placeholder="Your Email" type="email" />
-                  </div>
+                  <div class="input-style mb-20">{{ContactFrom.email}}</div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                  <div class="input-style mb-20">
-                    <input
-                      name="telephone"
-                      placeholder="Your Phone"
-                      type="tel"
-                    />
-                  </div>
+                  <div class="input-style mb-20">{{ContactFrom.contact}}</div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                  <div class="input-style mb-20">
-                    <input name="subject" placeholder="Subject" type="text" />
-                  </div>
+                  <div class="input-style mb-20">{{ContactFrom.subject}}</div>
                 </div>
                 <div class="col-lg-12 col-md-12">
                   <div class="textarea-style mb-30">
-                    <textarea name="message" placeholder="Message"></textarea>
+                    {{ContactFrom.message}}
                   </div>
+                  <div style="display: none">{{ContactFrom.accesstoken}}</div>
                   <button class="submit submit-auto-width" type="submit">
                     Send message
                   </button>
                 </div>
+                {{note}}
               </div>
             </form>
             <p class="form-messege"></p>
