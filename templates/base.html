@@ -564,19 +564,39 @@
                 <nav>
                   <ul>
                     <li>
-                      <a class="active" href="{% url 'home:home' %}">Home </a>
+                      <a
+                        class="{% if request.path == '/' %}active{% endif %}"
+                        href="{% url 'home:home' %}"
+                        >Home
+                      </a>
                     </li>
                     <li>
-                      <a href="{% url 'shop:shop.main' %}">Shop </a>
+                      <a
+                        class="{% if request.path == '/shop/' %}active{% endif %}"
+                        href="{% url 'shop:shop.main' %}"
+                        >Shop
+                      </a>
                     </li>
                     <li>
-                      <a href="{% url 'blogs:blogs' %}">Our Blog</a>
+                      <a
+                        class="{% if request.path == '/blog/' %}active{% endif %}"
+                        href="{% url 'blogs:blogs' %}"
+                        >Our Blog</a
+                      >
                     </li>
                     <li>
-                      <a href="{% url 'about:about' %}">About Us</a>
+                      <a
+                        class="{% if request.path == '/about/' %}active{% endif %}"
+                        href="{% url 'about:about' %}"
+                        >About Us</a
+                      >
                     </li>
                     <li>
-                      <a href="{% url 'contact:contact' %}">Contact Us</a>
+                      <a
+                        class="{% if request.path == '/contact/' %}active{% endif %}"
+                        href="{% url 'contact:contact' %}"
+                        >Contact Us</a
+                      >
                     </li>
                   </ul>
                 </nav>
@@ -594,7 +614,10 @@
             <div class="header-action-right d-block d-lg-none">
               <div class="header-action-2">
                 <div class="header-action-icon-2">
-                  <a href="{% url 'shop:shop.wishlist' %}">
+                  <a
+                    class="{% if request.path == '/shop/wishlist/' %}active{% endif %}"
+                    href="{% url 'shop:shop.wishlist' %}"
+                  >
                     <img
                       alt="Evara"
                       src="{% static 'imgs/theme/icons/icon-heart.svg'%}"
@@ -603,7 +626,11 @@
                   </a>
                 </div>
                 <div class="header-action-icon-2">
-                  <a class="mini-cart-icon" href="{% url 'shop:shop.cart' %}">
+                  <a
+                    class="{% if request.path == '/shop/cart' %}active{% endif %}"
+                    class="mini-cart-icon"
+                    href="{% url 'shop:shop.cart' %}"
+                  >
                     <img
                       alt="Evara"
                       src="{% static 'imgs/theme/icons/icon-cart.svg'%}"
@@ -762,19 +789,39 @@
             <nav>
               <ul class="mobile-menu">
                 <li class="menu-item-has-children">
-                  <a href="{% url 'home:home' %}">Home</a>
+                  <a
+                    class="{% if request.path == '/' %}active{% endif %}"
+                    href="{% url 'home:home' %}"
+                    >Home</a
+                  >
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="{% url 'shop:shop.main' %}">shop</a>
+                  <a
+                    class="{% if request.path == '/shop/' %}active{% endif %}"
+                    href="{% url 'shop:shop.main' %}"
+                    >shop</a
+                  >
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="{% url 'blogs:blogs' %}">Blog</a>
+                  <a
+                    class="{% if request.path == '/blog/' %}active{% endif %}"
+                    href="{% url 'blogs:blogs' %}"
+                    >Blog</a
+                  >
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="{% url 'about:about' %}">About Us</a>
+                  <a
+                    class="{% if request.path == '/about/' %}active{% endif %}"
+                    href="{% url 'about:about' %}"
+                    >About Us</a
+                  >
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="{% url 'contact:contact' %}">Contact Us</a>
+                  <a
+                    class="{% if request.path == '/contact/' %}active{% endif %}"
+                    href="{% url 'contact:contact' %}"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </nav>
