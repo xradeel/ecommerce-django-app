@@ -11,8 +11,8 @@ class Categories(models.Model):
 class Product(models.Model):
     name= models.CharField(max_length=250)
     category_id = models.ForeignKey(Categories, on_delete=models.CASCADE)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    discount = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=1)
+    discount = models.DecimalField(max_digits=10, decimal_places=1)
     short_description = models.TextField(max_length=500)
     long_description = models.TextField()
     size = models.CharField(max_length=255)
