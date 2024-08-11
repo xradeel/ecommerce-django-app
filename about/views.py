@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import TeamMember, Persona
+from .models import TeamMember, Persona, MainBranches
 
 def about(request):
     team_members = TeamMember.objects.all()[:4]
     personas = Persona.objects.all()[:6]
-    return render(request, 'about/about.html', {'team_members':team_members, 'personas': personas})
+    branches = MainBranches.objects.all()[:3]
+    return render(request, 'about/about.html', {'team_members':team_members, 'personas': personas, 'branches': branches})
 
 def team(request):
     team_members = TeamMember.objects.all()

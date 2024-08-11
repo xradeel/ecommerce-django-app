@@ -118,40 +118,23 @@
         </div>
       </div>
       <div class="row">
+        {% if branches %} {% for branch in branches %}
         <div class="col-md-4 text-center mb-md-0 mb-4">
           <img
             class="btn-shadow-brand hover-up border-radius-10 bg-brand-muted wow fadeIn animated"
-            src="{% static 'imgs/page/company-1.jpg' %}"
+            src="{{branch.image.url}}"
             alt=""
           />
-          <h4 class="mt-30 mb-15 wow fadeIn animated">New York, USA</h4>
+          <h4 class="mt-30 mb-15 wow fadeIn animated">{{branch.address}}</h4>
           <p class="text-grey-3 wow fadeIn animated">
-            27 Division St, New York<br />NY 10002, USA
+            {{branch.street}}<br />{{branch.postalcode}}
           </p>
         </div>
-        <div class="col-md-4 text-center mb-md-0 mb-4">
-          <img
-            class="btn-shadow-brand hover-up border-radius-10 bg-brand-muted wow fadeIn animated"
-            src="{% static 'imgs/page/company-2.jpg' %}"
-            alt=""
-          />
-          <h4 class="mt-30 mb-15 wow fadeIn animated">Paris, France</h4>
-          <p class="text-grey-3 wow fadeIn animated">
-            22 Rue des Carmes<br />
-            75005 Paris
-          </p>
-        </div>
-        <div class="col-md-4 text-center">
-          <img
-            class="btn-shadow-brand hover-up border-radius-10 bg-brand-muted wow fadeIn animated"
-            src="{% static 'imgs/page/company-3.jpg' %}"
-            alt=""
-          />
-          <h4 class="mt-30 mb-15 wow fadeIn animated">Jakarta, Indonesia</h4>
-          <p class="text-grey-3 wow fadeIn animated">
-            2476 Raya Yogyakarta,<br />89090 Indonesia
-          </p>
-        </div>
+        {% endfor %} {% else %}
+        <p class="w-50 m-auto text-grey-3 wow fadeIn animated">
+          Branches are not found
+        </p>
+        {% endif %}
       </div>
     </div>
   </section>
